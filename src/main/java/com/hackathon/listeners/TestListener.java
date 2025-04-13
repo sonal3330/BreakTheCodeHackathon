@@ -29,11 +29,19 @@ public class TestListener extends TestBase implements ITestListener {
     ExtentTest test = extent.createTest(result.getMethod().getMethodName());
     testReport.set(test);
     log.info("Started test: " + result.getMethod().getMethodName());
+    
+    if (getSessionId() != null) {
+      log.info("LambdaTest Session ID: " + getSessionId());
+      testReport.get().log(Status.INFO, "LambdaTest Session ID: " + getSessionId());
+    }
   }
 
   @Override
   public void onTestSuccess(ITestResult result) {
     testReport.get().log(Status.PASS, "Test Passed");
+    if (getSessionId() != null) {
+      testReport.get().log(Status.INFO, "LambdaTest Session ID: " + getSessionId());
+    }
     log.info("Passed: " + result.getMethod().getMethodName());
   }
 
@@ -50,6 +58,11 @@ public class TestListener extends TestBase implements ITestListener {
     } catch (IOException e) {
       e.printStackTrace();
     }
+    
+    if (getSessionId() != null) {
+      testReport.get().log(Status.INFO, "LambdaTest Session ID: " + getSessionId());
+    }
+    
     log.error("Failed: " + result.getMethod().getMethodName());
   }
 

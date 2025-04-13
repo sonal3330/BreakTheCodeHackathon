@@ -1,5 +1,5 @@
 # Ignore config.properties containing sensitive information
-/src/main/resources/config.properties
+*.properties
 
 # Ignore compiled classes and build directories
 /target/
