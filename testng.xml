@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HackathonBreakTheCode" parallel="classes" thread-count="2">
+   <listeners>
+    <listener class-name="com.hackathon.listeners.TestListener"/>
+  </listeners>
+  <test name="BreakTheCode">
+    <classes>
+      <class name="com.hackathon.tests.LoginTest"/>
+      <class name="com.hackathon.tests.AlertTest"/> 
+    </classes>
+  </test>
+</suite>

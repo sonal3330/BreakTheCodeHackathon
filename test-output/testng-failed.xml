@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [HackathonBreakTheCode]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="BreakTheCode(failed)">
+    <classes>
+      <class name="com.hackathon.tests.LoginTest">
+        <methods>
+          <include name="invalidLoginTest"/>
+          <include name="initialization"/>
+          <include name="validLoginTest"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.hackathon.tests.LoginTest -->
+      <class name="com.hackathon.tests.AlertTest">
+        <methods>
+          <include name="verifyAlerts"/>
+          <include name="initialization"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.hackathon.tests.AlertTest -->
+    </classes>
+  </test> <!-- BreakTheCode(failed) -->
+</suite> <!-- Failed suite [HackathonBreakTheCode] -->

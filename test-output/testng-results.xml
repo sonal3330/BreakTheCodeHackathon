@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-13T12:04:20 IST" name="HackathonBreakTheCode" finished-at="2025-04-13T12:04:34 IST" duration-ms="13963">
+    <groups>
+    </groups>
+    <test started-at="2025-04-13T12:04:20 IST" name="BreakTheCode" finished-at="2025-04-13T12:04:34 IST" duration-ms="13963">
+      <class name="com.hackathon.tests.LoginTest">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.hackathon.tests.LoginTest@5d25e6bb]" started-at="2025-04-13T12:04:20 IST" name="initialization" finished-at="2025-04-13T12:04:22 IST" duration-ms="2369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="invalidLoginTest()[pri:0, instance:com.hackathon.tests.LoginTest@5d25e6bb]" started-at="2025-04-13T12:04:22 IST" name="invalidLoginTest" finished-at="2025-04-13T12:04:32 IST" duration-ms="9948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method signature="validLoginTest()[pri:0, instance:com.hackathon.tests.LoginTest@5d25e6bb]" started-at="2025-04-13T12:04:32 IST" name="validLoginTest" finished-at="2025-04-13T12:04:33 IST" duration-ms="1477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.hackathon.tests.LoginTest@5d25e6bb]" started-at="2025-04-13T12:04:33 IST" name="quit" finished-at="2025-04-13T12:04:34 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.hackathon.tests.LoginTest -->
+      <class name="com.hackathon.tests.AlertTest">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:com.hackathon.tests.AlertTest@403132fc]" started-at="2025-04-13T12:04:20 IST" name="initialization" finished-at="2025-04-13T12:04:22 IST" duration-ms="2258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="verifyAlerts()[pri:0, instance:com.hackathon.tests.AlertTest@403132fc]" started-at="2025-04-13T12:04:22 IST" name="verifyAlerts" finished-at="2025-04-13T12:04:31 IST" duration-ms="9134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlerts -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.hackathon.tests.AlertTest@403132fc]" started-at="2025-04-13T12:04:31 IST" name="quit" finished-at="2025-04-13T12:04:31 IST" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.hackathon.tests.AlertTest -->
+    </test> <!-- BreakTheCode -->
+  </suite> <!-- HackathonBreakTheCode -->
+</testng-results>
