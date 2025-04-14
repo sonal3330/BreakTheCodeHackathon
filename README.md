@@ -54,11 +54,20 @@ mvn clean install
 
 ### 4️⃣ Configure Credentials
 
-Edit `src/main/java/com/hackathon/config/config.properties`:
+Add `src/main/java/com/hackathon/config/config.properties`file
 
 ```properties
-username=your_username
-password=your_password
+
+loginUrl: https://the-internet.herokuapp.com/login 
+alertUrl: https://the-internet.herokuapp.com/javascript_alerts
+username: your_username
+password: your_password
+
+# LambdaTest credentials
+lambdatest.username: your_username
+lambdatest.accesskey: your_accesskey
+lambdatest.hub: https://hub.lambdatest.com/wd/hub
+
 ```
 
 > ⚠️ Ensure `config.properties` is added to `.gitignore` to avoid pushing credentials to GitHub.
