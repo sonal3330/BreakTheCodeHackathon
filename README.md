@@ -128,23 +128,41 @@ Both `INFO` and `DEBUG` logs are written to `logs/BreakTheCode.log`.
 ## 📂 .gitignore Sample
 
 ```gitignore
-# Eclipse & Java build
-.classpath
-.project
-.settings/
-target/
-test-output/
 
-# Logs
-logs/
-
-# OS-specific
-.DS_Store
-Thumbs.db
-
-# Configs
+# Ignore config.properties containing sensitive information
 *.properties
-```
+
+# Ignore compiled classes and build directories
+/target/
+
+# Ignore IDE-specific files (e.g., IntelliJ, Eclipse)
+.idea/
+*.iml
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore log files generated during tests or runtime
+*.log
+
+# Ignore temporary files created by the OS (e.g., Thumbs.db on Windows, .DS_Store on macOS)
+Thumbs.db
+.DS_Store
+
+# Ignore Maven wrapper files (if not needed for your project)
+.mvn/
+
+# Ignore user-specific IntelliJ IDEA files (e.g., project-specific configurations)
+*.iws
+*.iml
+
+# Ignore OS-specific files (for example, Windows-based files)
+ehthumbs.db
+Desktop.ini
+
+# Ignore all other system-specific files and directories that are not project-related
+*.bak
+*.swp
 
 ---
 
